@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="../css/schedule.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="module" src="../javaScript/schedule.js"></script>
+    <title>2조</title>
+  </head>
+  <body>
+    <div class="rap">
+      <div class="header">
+        <div class="btn prevDay"></div>
+        <h2 class="dateTitle"></h2>
+        <div class="btn nextDay"></div>
+      </div>
+
+      <div class="grid dateHead">
+        <div>일</div>
+        <div>월</div>
+        <div>화</div>
+        <div>수</div>
+        <div>목</div>
+        <div>금</div>
+        <div>토</div>
+      </div>
+
+      <div class="grid dateBoard"></div>
+    </div>
+    <div class="schedulePopup">
+      <h1
+        class="todayDate"
+        style="font-size: 3rem; margin: 20px 0px 20px 0px"
+      ></h1>
+      <textarea
+        id="scheduleContent"
+        class="scheduleContent"
+        cols="35"
+        rows="17"
+      ></textarea>
+      <div class="btnWrap">
+        <button id="schedulePopupSubmit" class="schedulePopupSubmit">
+          확인
+        </button>
+        <button id="schedulePopupClose" class="schedulePopupClose">닫기</button>
+      </div>
+    </div>
+  </body>
+</html>

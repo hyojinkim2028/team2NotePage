@@ -1,0 +1,138 @@
+/* 달력 */
+
+.dateHead div {
+  background: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 5px;
+}
+
+.grid div {
+  padding: 0.6rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: white;
+  position: relative;
+}
+
+.dateBoard div {
+  color: #222;
+  font-weight: bold;
+  min-height: 6rem;
+  width: 150px;
+  height: 130px;
+  padding: 0.6rem 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+
+.noColor {
+  background: #eee;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.dayBox {
+  margin: 5px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.scheduleLine {
+  background-color: rgb(226, 226, 226);
+  color: black;
+}
+
+/* 좌우 버튼 */
+.btn {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #000;
+  border-width: 3px 3px 0 0;
+  cursor: pointer;
+}
+
+.prevDay {
+  transform: rotate(-135deg);
+}
+
+.nextDay {
+  transform: rotate(45deg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.rap {
+  margin: auto;
+  max-width: 1200px;
+  padding: 0 1.4rem;
+  margin-top: 1.4rem;
+}
+
+.dateHead {
+  margin: 0.4rem 0;
+}
+
+.schedulePopup {
+  position: absolute;
+  bottom: -90%;
+  left: 41%;
+  width: 400px;
+  height: 620px;
+  background-color: white;
+  border: 4px solid black;
+  border-radius: 10px;
+  text-align: center;
+  display: none;
+}
+.scheduleContent {
+  width: 90%;
+  height: 65%;
+  font-size: 1.2rem;
+  padding: 15px;
+  border-radius: 10px;
+  white-space: pre;
+}
+
+.btnWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px;
+}
+
+.btnWrap > button {
+  width: 170px;
+  height: 40px;
+
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: large;
+}
+
+.btnWrap > button:hover {
+  border: 4px solid gray;
+}
+.btnWrap > button:active {
+  border: 5px solid black;
+}
